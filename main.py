@@ -5,7 +5,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("Nice to meet you!I")
 
 if __name__ == "__main__":
-    app = ApplicationBuilder().token("").build()
+    app = ApplicationBuilder().token("0").build()
     
     app.add_handler(CommandHandler("start", start))
     
